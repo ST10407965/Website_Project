@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+	<head>
+		<title>Ipeleng Cares Foundation</title>
+		<meta charset="UTF-8">
+		<meta name=”description” content=”Ipeleng Cares Foundation is an NPO dedicated to eradicating BULLYING in schools.”>
+		<meta name=”keywords” content=”bullying, bullying foundation, school bullying, bullying npo, npo, chess, anti-bullying, Ipeleng Mofokeng, leadership program, against bullying, mentor”>
+		<link rel="icon" type="image/x-icon" href="Images/Annexure a)/logo.png">
+		<link href="style.css" rel="stylesheet"  type="text/css"><!--https://www.w3schools.com/howto/howto_html_favicon.asp-->
+		<meta name="author" content="Kekeletso Musi">
+		<meta name="viewport" content= "width=device-width, initial-scale=1.0"><!--Resopnsiveness-->
+	</head>
+
+	<body>
+		<img src="Images/Annexure a)/logo.png" class="logo"/><br>
+										<!-- Division for the navigation marked with lines-->
+		<nav id ="navigation">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div><!--Content Section-->
+			<h1>Contact Us</h1>
+			<h2>Our Address</h2>
+	<!--This includes addresses-->
+
+			<p><b>Venues:</b> East Rand / Ekurhuleni Johannesburg Pretoria / Tshwane Vaal Triangle / Sedibeng West Rand
+			<p><b>Cost:</b> Online program: <br> Registration fee is R100, program is free and additional coding training available at discount fee</p>
+			<p><b>Times:</b> 9am-6pm</p>
+			
+			<hr>
+			
+			<h2>Become a member TODAY!</h2>
+			<form name="contactUs" action="/action_page.php" onsubmit="return validateForm()" method="post" onsubmit="return validateForm()" method="get">
+					<label for="fname">Name:</label><br>
+					<input type="text" id="fname" name="fname" value="Your name here"><br>
+					<label for="email">Email:</label><br>
+					<input type="email" id="email" name="email" value="Your email here"><br> <!--This is where the user inputs-->					
+					<br>
+					<label for="province">Province:<br>(Choose...)</label><br>
+						<select id="selector">
+							<option>Gauteng</option>
+							<option>North West</option>
+							<option>Limpopo</option>
+							<option>Mpumalanga</option>
+							<option>Kwa-Zulu Natal</option>
+							<option>Eastern Cape</option>
+							<option>Western Cape</option>
+							<option>Free State</option>
+							<option>Northern Cape</option>
+						</select><br> <!-- This contains many options-->
+					
+					<br>
+					
+					<label for="gender">Gender:<br>(Select one)</label><br>
+					
+						<div id="radio">
+							<input type="radio" id="male" name="gender" value="Male">
+							<label for="male">Male</label><br>
+							<input type="radio" id="female" name="gender" value="Female">
+							<label for="female">Female</label><br>
+							<input type="radio" id="other" name="gender" value="Rather not say">
+							<label for="other">Rather not say</label><br> <!--This is for the radio group options-->
+						</div>
+					
+					<br>
+					
+					<label for="interest">Interest:<br>(Select one to three)</label><br>
+						<div id="checkbox">
+							<input type="checkbox" id="interest1" name="interest1" value="Chess">
+							<label for="interest1"> I want to learn Chess</label><br>
+							<input type="checkbox" id="interest2" name="interest2" value="Anti-Bullying Program">
+							<label for="interest2"> I want to join the Anti-Bullying Program</label><br>
+							<input type="checkbox" id="interest3" name="interest3" value="Character Building">
+							<label for="interest3"> I want to build Character</label><br> <!--Checkboxes-->
+						<!--https://www.w3schools.com/html/html_forms.asp-->
+						</div>
+
+					<br>
+				
+					<a href = "mailto: st10407965@rcconnect.edu.za" class="button"><input type="Submit" onclick="validateForm()"></input></a><!--Submit email-->
+					<input type="reset" class="button"></input><!--Reset the the form-->
+				
+				<hr>
+				
+			</form>
+			
+			<script>
+				//below is the function that runs when Submit is clicked
+				function validateForm(){
+					//Check that someone has actually entered something besides the default message or nothing
+					var validateName = document.getElementById("fname").value;
+					if (validateName == "Your name here" || validateName == ""){
+						alert("Please enter your name");
+					 }
+					//Check that the email address includes a @ and . in it
+					var validateEmail = document.getElementById("email").value;
+					if (validateEmail.includes("@") && validateEmail.includes(".")){}
+					else{alert("Not a valid email format")}
+					}
+					var validateProvince = document.getElementById("fname").value;
+					if (validateProvince == "Choose..." || validateProvince == ""){
+						alert("Please choose your province");
+					 }//Checks if a Province has been chosen
+
+					function validateForm() {
+					let x = document.forms["contactUs"]["fname"].value;
+					if (x == "") {
+						alert("Name must be filled out");
+						return false;
+					}
+					}
+				}
+
+				function myFunction() {
+				document.getElementById("contactUs").reset();
+				}//https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_form_reset
+			</script>
+			
+			<h2 style="font-family: Helvetica;">Our Social Media (Click the Image)</h2>
+			<ul style="font-family: arial;">
+				
+					<p>Facebook</p>
+					<a href="https://web.facebook.com/ippyleng/?_rdc=1&_rdr" class="icon"><img src="Images/Annexure a)/facebook.PNG"></a>
+				<br>
+					<p>Instagram</p>
+					<a href="https://www.instagram.com/ipelengcaresfoundation/" class="icon"><img src="Images/Annexure a)/instagram.PNG"></a>
+				<br>
+					<p>Whatsapp:</p>
+					<a href="contact.html"><img src="Images/Annexure a)/whatsapp.PNG" class="icon"></a>
+					<p>083 640 7509</p>
+					<p>073 911 5460</p>
+				<br>
+					<p>LinkedIn</p>
+					<a href="https://za.linkedin.com/in/ipeleng-cares-foundation-b2895822a" class="icon"><img src="Images/Annexure a)/linkedin.PNG" class="icon"></a>
+				<br>
+					<p>YouTube</p>
+					<a href="https://www.youtube.com/@ipelengmofokeng5063"><img src="Images/Annexure a)/youtube.PNG" class="icon"></a>
+			</ul>
+			<img src="Images/Annexure b)/pic1.jpg" class="img"/>
+		</div>
+
+	<footer>	<!--Contact Link division-->
+		<p>Ipeleng Cares Foundation (Click the image to visit our social media)</p>
+		<a href="https://web.facebook.com/ippyleng/?_rdc=1&_rdr"><img src="Images/Annexure a)/facebook.PNG"></a>
+		<a href="https://www.instagram.com/ipelengcaresfoundation/"><img src="Images/Annexure a)/instagram.PNG"></a>
+		<a href="contact.html"><img src="Images/Annexure a)/whatsapp.PNG"></a>
+		<a href="https://za.linkedin.com/in/ipeleng-cares-foundation-b2895822a"><img src="Images/Annexure a)/linkedin.PNG"></a>
+		<a href="https://www.youtube.com/@ipelengmofokeng5063"><img src="Images/Annexure a)/youtube.PNG"></a>
+		<p>
+			<script>
+				var theDate=new Date();
+				document.write("&copy; " + theDate.getFullYear());
+				document.write(" - Kekeletso Musi(ST10407965) | Last modified: ");
+				var theNewDate=new Date(document.lastModified);
+				document.write(theNewDate.toDateString());
+			</script>
+		</p>
+	</footer>
+	</body>
+</html>
